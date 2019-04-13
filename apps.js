@@ -9,6 +9,7 @@ const navSlide= ()=> {
 
   // Animation Links
     navLinks.forEach((link, index) =>{
+      console.log(index);
        if(link.style.animation) {
            link.style.animation=''
         } else {
