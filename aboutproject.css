@@ -37,6 +37,11 @@ section{
   margin-bottom: 40px;
 
 }
+.the-team{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
 
 .pe{
 	float: left;
