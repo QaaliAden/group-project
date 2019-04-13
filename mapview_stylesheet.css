@@ -1,3 +1,4 @@
+
 body {
   background-color: white;
 }
@@ -78,3 +79,53 @@ width:95%
   margin-top: 20%;
 
 }
+
+
+.mapdiv {
+  width: 800px;
+  margin: 50px auto;
+}
+
+#outer_delimitation {
+  fill: none;
+}
+
+#inner_delimitations path, #inner_delimitations polyline {
+  stroke: black;
+}
+
+ #London_boroughs path {
+  fill: lightgrey;
+}
+
+ #London_boroughs path:hover {
+  fill: red;
+}
+
+/* Fixing the Barking split path shape - doesn't work after inserting <a> tags*/
+ #Barking:hover ~ #topOfBarking {
+  fill: red;
+}
+
+/* For checking which path aligns to what area of the map
+#thing {
+  fill: red;
+} */
+
+a {
+  cursor: pointer;
+}
+@media (max-width:900px){
+.mapdiv  {
+width:95%
+}
+}
+.maphidden{
+  font-size: 2rem;
+  font-weight: 100;
+  color:red;
+  text-transform: uppercase;
+  margin-top: 20%;
+
+}
+
